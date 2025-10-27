@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, minimum-scale=0.1">
+    <title>Kira Lugovskaya</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/main.js" type="module"></script>
+</head>
+<body>
+    <header class="header" data-js-header> 
+        <div class= "header__body container">
+            <div class = "header__overlay" data-js-header-overlay>
+                <nav class="header__menu"> 
+                    <ul class = "header__menu_list">
+
+                        <li class = "header__menu_item"> 
+                            <a class = "header__menu_link is-active" href="#"> about me </a>
+                        </li>
+
+                        <li class = "header__menu_item"> 
+                            <a class = "header__menu_link" href="#"> skills </a>
+                        </li>
+
+                        <li class = "header__menu_item"> 
+                            <a class = "header__menu_link" href="#"> services </a>
+                        </li>
+
+                        <li class = "header__menu_item"> 
+                            <a class = "header__menu_link" href="#"> portfolio </a>
+                        </li>
+
+                        <li class = "header__menu_item"> 
+                            <a class = "header__menu_link" href="#"> contact </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="header__contact contact">
+                    <a href="https://github.com/KiraProsto" class="header__contact-icon icon--github" aria-label="GitHub" title = "GitHub">
+                        <img class = "github-icon" src = "./images/github-icon.svg" alt = "" />
+                    </a>
+                    <a href="#" class="header__contact-icon icon--telegram" aria-label="Telegram">
+                        <img class = "telegram-icon" src = "./images/telegram-icon.svg" alt = ""/>
+                    </a>
+                    <a href="#" class="header__contact-icon icon--vk" aria-label="VK">
+                        <img class = "vk-icon" src = "./images/vk-icon.svg" alt = "" />
+                    </a>
+                    <a href="#" class="header__contact-icon icon--instagram" aria-label="Instagram">
+                        <img class = "instagram-icon" src = "./images/instagram-icon.svg" alt = ""/>
+                    </a>
+                    <a href="#" class="header__contact-icon icon--phone" aria-label="Phone">
+                        <img class = "phone-icon" src = "./images/phone-icon.svg" alt = "" />
+                    </a>
+                </div>
+            </div>
+
+            <button 
+                class="header__burger-button burger-button visible-mobile"
+                type="button"
+                aria-label = "Open menu"
+                title= "Open menu"
+                data-js-header-burger-button
+            > 
+                <span class="burger-button__line"></span>
+                <span class="burger-button__line"></span>
+                <span class="burger-button__line"></span>
+            </button>
+        </div>
+
+    </header>
+</body>
+</html>

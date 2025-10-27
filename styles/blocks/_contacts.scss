@@ -1,0 +1,31 @@
+@use '../helpers' as *;
+
+.header__contact {
+  display: inline-flex;
+  align-items: center;
+  gap: rem(24);
+}
+
+.header__contact-icon {
+    // телефон
+  width: fluid(43, 16);
+  height: fluid(43, 16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover img{
+    transform: scale(1.05);
+    transition: var(--transition-duration);
+  }
+}
+
+.github-icon,
+.telegram-icon,
+.vk-icon,
+.instagram-icon,
+.phone-icon {
+  width: 100%;
+  height: auto;
+  display: block;
+}

@@ -1,0 +1,21 @@
+@use 'helpers' as *;
+
+:root {
+    --color-dark: #0D0D0D;
+    --color-grey: #181818;
+    --color-accent: #5E26C7;
+    --color-white: #FFFFFF;
+
+    --font-family-base: 'Roboto', sans-serif;
+    --font-family-accent: 'IBMPlexMono', sans-serif;
+
+    /*если что здесь меняем*/
+    --container-width: #{rem(925)};
+    --container-padding-x: #{rem(16)};
+
+    --transition-duration: 0.2s;
+
+    @include laptop {
+        --container-width: #{rem(850)};
+    }
+}

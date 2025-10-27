@@ -1,0 +1,77 @@
+@use 'helpers' as *;
+
+html{
+    &.is-lock{
+        overflow: hidden;
+    }
+}
+
+// если что, меняем под телефон
+body{
+    @include fluid-text(28, 14);
+
+    font-family: var(--font-family-base);
+    color: var(--color-white);
+    background-color: var(--color-dark);
+}
+
+.title-white {
+  color: var(--color-white);
+}
+
+.title-purple {
+  color: var(--color-accent);
+}
+
+h1, .h1{
+    font-weight: 900;
+
+    //телефон
+    @include fluid-text(110, 60);
+
+    line-height: 1.2;
+}
+
+h2, .h2{
+    font-weight: 600;
+    font-family: var(--font-family-accent);
+
+    //телефон
+    @include fluid-text(48, 24);
+
+    line-height: 1.2;
+}
+
+h3, .h3{
+    font-weight: 500;
+    //телефон
+    @include fluid-text(40, 20);
+
+    line-height: 1.2;
+}
+
+a, 
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a{
+    color: inherit;
+
+    @include hover{
+        color: var(--color-accent);
+    }
+
+    &[class]{
+        text-decoration: none;
+    }
+}
+
+:focus-visible{
+    transition-duration: 0s !important;
+}

@@ -1,0 +1,72 @@
+@use '../helpers' as *;
+
+.header{
+    padding-block: rem(16);
+
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 1rem;
+    }
+
+    &__overlay{
+
+        @include mobile-above {
+            display: contents;
+        }
+
+        @include mobile{
+            position: fixed;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1rem;
+            transition-duration: var(--transition-duration);
+            row-gap: 3rem;
+
+            &:not(.is-active){
+                @include hide;
+
+                translate: 100%;
+            }
+        }
+    }
+
+    &__menu{
+        @include mobile{
+            overflow: auto;
+        }
+
+        &_list{
+            display: flex;
+            align-items: center;
+            column-gap: fluid(60, 15);
+            flex-wrap: nowrap;
+            min-width: 0;
+
+            @include mobile{
+                flex-direction: column;
+                row-gap: 1rem;
+            }
+        }
+
+        &_link{
+            font-weight: 300;
+            white-space: nowrap;
+
+            &.is-active{
+                font-weight: 400;
+                pointer-events: none;
+            }
+        }
+    }
+
+    &__contact{
+        display: flex;
+        gap: fluid(24, 8);
+        margin-left: fluid(150, 8);
+        justify-content: center;
+    }
+}
