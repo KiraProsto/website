@@ -312,9 +312,15 @@ html.is-lock {
 
 body {
   font-size: clamp(0.875rem, 0.6730769231rem + 0.8974358974vw, 1.75rem);
+  display: flex;
+  flex-direction: column;
   font-family: var(--font-family-base);
   color: var(--color-white);
   background-color: var(--color-dark);
+}
+
+main {
+  flex-grow: 1;
 }
 
 .title-white {
@@ -510,6 +516,15 @@ a[class] {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.footer {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /*# sourceMappingURL=main.css.map */
