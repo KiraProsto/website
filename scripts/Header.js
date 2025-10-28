@@ -5,22 +5,26 @@ class Header {
     burgerButton: '[data-js-header-burger-button]',
   };
 
-  stateClases = {
+  stateClasses = {
     isActive: 'is-active',
     isLock: 'is-lock',
   };
 
   constructor() {
     this.rootElement = document.querySelector(this.selectors.root);
-    this.overlayElement = this.querySelector(this.selectors.overlay);
-    this.burgerButtonElement = this.querySelector(this.selectors.burgerButton);
+    this.overlayElement = this.rootElement.querySelector(
+      this.selectors.overlay
+    );
+    this.burgerButtonElement = this.rootElement.querySelector(
+      this.selectors.burgerButton
+    );
     this.bindEvents();
   }
 
   onBurgerButtonClick = () => {
-    this.burgerButtonElement.classList.toggle(this.stateClases.isActive);
-    this.overlayElement.classList.toggle(this.stateClases.isActive);
-    document.documentElement.classList.toggle(this.stateClases.isLock);
+    this.burgerButtonElement.classList.toggle(this.stateClasses.isActive);
+    this.overlayElement.classList.toggle(this.stateClasses.isActive);
+    document.documentElement.classList.toggle(this.stateClasses.isLock);
   };
 
   bindEvents() {
