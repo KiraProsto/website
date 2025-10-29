@@ -1,0 +1,43 @@
+@use '../helpers' as *;
+
+.hero__button {
+    display: inline-flex;
+    justify-content: center;
+    padding: rem(17) rem(20);
+    font-size: rem(28);
+    font-weight: 500;
+    color: var(--color-white);
+    background: var(--color-gradient);
+    white-space: nowrap;
+    border: var(--border);
+    border-radius: rem(9);
+
+    @include laptop {
+        padding: rem(15) rem(16); 
+        font-size: rem(18);
+    }
+
+    @include tablet {
+        padding: rem(12) rem(14); 
+        font-size: rem(14);
+    }
+
+    @include mobile{
+        padding: rem(12) rem(14);
+        font-size: rem(12);
+        border-radius: rem(6);
+    }
+
+    @include mobile-s{
+        padding: rem(8) rem(10);
+        font-size: rem(8);
+        border-radius: rem(6);
+    }
+
+
+    @include hover{
+        color: var(--color-white);
+        background: var(--color-perple);
+    }
+
+}

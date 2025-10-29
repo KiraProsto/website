@@ -1,0 +1,144 @@
+@use '../helpers' as *;
+
+.hero{
+    position: relative;
+    overflow: hidden;
+
+    @include mobile {
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--color-gradient-black);
+            pointer-events: none;
+            z-index: 1; 
+        }
+    }
+
+    &__main {
+        background: url(../../images/Home.png) 0 0 /cover no-repeat;
+
+        display: grid;
+        grid-template-columns: 48% auto;
+        padding-left: 10%;
+
+        @include mobile{
+            background: url(../../images/Home_mobile.png) 0 0 /cover no-repeat;
+        
+            display: flex;
+            flex-direction: column;
+            padding-left: 0;
+        }
+
+        &__content {
+            max-width: 100%;
+            width: 100%;
+            overflow-wrap: break-word;
+            padding-top: rem(160);
+
+            &:not(:last-child){
+                margin-bottom: rem(30);
+            }
+
+            @include mobile {
+                position: absolute;
+                bottom: rem(10);
+                margin-left: 10%;
+                z-index: 2;
+                text-align: left;
+                
+                &:not(:last-child){
+                    margin-bottom: rem(10);
+                }
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: rem(30);
+
+        @include mobile{
+            margin-bottom: rem(10);
+        }
+    }
+
+    &__description {
+        margin-bottom: rem(95);
+        width: fluid(650, 300);
+        display: block;
+
+        @include laptop{
+            margin-bottom: rem(75);
+        }
+
+        @include tablet{
+            margin-bottom: rem(50);
+        }
+
+        @include mobile{
+            margin-bottom: rem(25);
+        }
+
+        @include mobile-s{
+            width: rem(280);
+            margin-bottom: rem(25);
+        }
+    }
+
+    &__buttons {
+        width: fluid(650, 300);
+        display: flex;
+        justify-content: center;
+        gap: rem(40);
+
+        @include tablet{
+            gap: rem(20);
+        }
+
+        @include mobile{
+            gap: rem(15);
+        }
+
+        @include mobile-s{
+            width: rem(280);
+            gap: rem(15);
+        }
+    }
+
+    &__photo{
+        padding-top: rem(80);
+        position: relative;
+        display: block;
+
+        @include mobile {
+            order: -1; 
+            width: 100%;
+            height: auto;
+            margin-left: rem(87);
+            transform: translateY(rem(-20));
+            min-height: rem(200);
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                display: block;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 40%;
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+                pointer-events: none;
+                z-index: 2;
+            }
+        }
+    }
+}

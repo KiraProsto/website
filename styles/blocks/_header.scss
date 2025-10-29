@@ -11,6 +11,8 @@
     }
 
     &__overlay{
+        z-index: 10000;
+        background-color: var(--color-dark);
 
         @include mobile-above {
             display: contents;
