@@ -5,6 +5,7 @@
 
     display: inline-flex;
     margin-left: auto;
+    z-index: 10;
     flex-direction:column;
     justify-content: space-between;
     padding: rem(8.5) rem(4.25);
@@ -31,6 +32,7 @@
             &:last-child{
                 width: 0;
             }
+        
         }
     }
 

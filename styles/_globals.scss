@@ -43,7 +43,7 @@ h2, .h2{
     font-family: var(--font-family-accent);
 
     //телефон
-    @include fluid-text(48, 24);
+    @include fluid-text(48, 20);
 
     line-height: 1.2;
 }
@@ -53,6 +53,14 @@ h3, .h3{
     //телефон
     @include fluid-text(40, 20);
 
+    line-height: 1.2;
+}
+
+h6, .h6{
+    font-weight: 300;
+
+    @include fluid-text(30, 11);
+    
     line-height: 1.2;
 }
 
@@ -80,4 +88,13 @@ a{
 
 :focus-visible{
     transition-duration: 0s !important;
+}
+
+.kursor::after{
+    content: "";
+    display: inline-block;
+    width: fluid(12,6);
+    height: fluid(34,17);
+    background-image: url('../icons/kursor.svg');
+    margin-left: rem(3);
 }
