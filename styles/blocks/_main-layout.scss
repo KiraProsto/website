@@ -6,12 +6,14 @@
     &__sidebar{
         position: sticky;
         width: 27.1%;
-        height: 100vh;
+        height: rem(900);
         margin: rem(22);
         padding-left: rem(28);
         padding-right: rem(30);
         background-color: var(--color-grey);
         border-radius: rem(38);
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
 }

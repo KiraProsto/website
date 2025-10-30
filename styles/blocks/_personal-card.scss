@@ -1,6 +1,8 @@
 @use '../helpers' as *;
 
 .personal-card{
+    max-height: 100vh;
+    overflow-y: auto;
 
     &__header{
         display: flex;
@@ -50,7 +52,7 @@
 }
 
 .custom-line{
-    width: rem(220);
+    width: 100%;
     justify-content: center;
     background-color: var(--color-white);
     height: rem(2);
