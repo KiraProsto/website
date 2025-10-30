@@ -361,6 +361,7 @@ h6,
 .p_h1 {
   font-weight: 900;
   font-size: clamp(0.5625rem, 0.2307692308rem + 1.4743589744vw, 2rem);
+
   line-height: 1.2;
 }
 
@@ -773,6 +774,7 @@ a[class] {
 }
 
 .main-layout {
+
   display: grid;
   grid-template-columns: 27.1% auto;
 }
@@ -793,6 +795,7 @@ a[class] {
   box-sizing: border-box;
   overflow: hidden;
 }
+
 @media (max-width: 63.99875rem) {
   .main-layout__sidebar {
     height: 36.25rem;
@@ -927,5 +930,4 @@ a[class] {
   margin-top: 5rem;
   margin-left: 10rem;
 }
-
 /*# sourceMappingURL=main.css.map */
