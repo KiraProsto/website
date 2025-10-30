@@ -1,0 +1,17 @@
+@use '../helpers' as *;
+
+.main-layout{
+    display: flex;
+    
+    &__sidebar{
+        position: sticky;
+        width: 27.1%;
+        height: 100vh;
+        margin: rem(22);
+        padding-left: rem(28);
+        padding-right: rem(30);
+        background-color: var(--color-grey);
+        border-radius: rem(38);
+    }
+
+}
