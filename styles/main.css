@@ -364,6 +364,7 @@ h6, .h6 {
   line-height: 1.2;
 }
 
+
 .p_h1 {
   font-weight: 900;
   font-size: clamp(1rem, 0.7692307692rem + 1.0256410256vw, 2rem);
@@ -833,5 +834,6 @@ a[class] {
   height: 0.125rem;
   margin: 1rem 0;
 }
+
 
 /*# sourceMappingURL=main.css.map */
