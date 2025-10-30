@@ -14,6 +14,14 @@
         border-radius: rem(38);
         box-sizing: border-box;
         overflow: hidden;
+
+        @include tablet{
+            height: rem(580);
+        }
+
+        @include mobile{
+            display: none;
+        }
     }
 
 }

@@ -12,12 +12,12 @@
         margin-top: rem(43);
 
         &__avatar{
-            width: rem(70);
+            width: fluid(80, 30);
         }
     }
 
     &__photo{
-        width: rem(295);
+        width: fluid(295, 200);
         margin-top: rem(25);
     }
 

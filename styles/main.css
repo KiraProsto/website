@@ -366,21 +366,21 @@ h6, .h6 {
 
 .p_h1 {
   font-weight: 900;
-  font-size: clamp(1rem, 0.7692307692rem + 1.0256410256vw, 2rem);
+  font-size: clamp(0.75rem, 0.4615384615rem + 1.2820512821vw, 2rem);
   line-height: 1.2;
 }
 
 .p_h2 {
   font-weight: 200;
   margin-bottom: 0.2rem;
-  font-size: clamp(1rem, 0.8846153846rem + 0.5128205128vw, 1.5rem);
+  font-size: clamp(0.6875rem, 0.5rem + 0.8333333333vw, 1.5rem);
   line-height: 1.2;
 }
 
 .p_h3 {
   font-weight: 400;
   margin-bottom: 0.2rem;
-  font-size: clamp(1rem, 0.8846153846rem + 0.5128205128vw, 1.5rem);
+  font-size: clamp(0.6875rem, 0.5rem + 0.8333333333vw, 1.5rem);
   line-height: 1.2;
 }
 
@@ -787,6 +787,16 @@ a[class] {
   box-sizing: border-box;
   overflow: hidden;
 }
+@media (max-width: 63.99875rem) {
+  .main-layout__sidebar {
+    height: 36.25rem;
+  }
+}
+@media (max-width: 47.99875rem) {
+  .main-layout__sidebar {
+    display: none;
+  }
+}
 
 .personal-card {
   max-height: 100vh;
@@ -800,10 +810,10 @@ a[class] {
   margin-top: 2.6875rem;
 }
 .personal-card__header__avatar {
-  width: 4.375rem;
+  width: clamp(1.875rem, 1.1538461538rem + 3.2051282051vw, 5rem);
 }
 .personal-card__photo {
-  width: 18.4375rem;
+  width: clamp(12.5rem, 11.1298076923rem + 6.0897435897vw, 18.4375rem);
   margin-top: 1.5625rem;
 }
 .personal-card__profession {
