@@ -64,7 +64,6 @@ h4, .h4{
     line-height: 1.2;
 }
 
-
 h6, .h6{
     font-weight: 300;
 
@@ -75,7 +74,6 @@ h6, .h6{
 
 .p_h1{
     font-weight: 900;
-
     @include fluid-text(32, 9);
     line-height: 1.2;
 }
@@ -83,7 +81,6 @@ h6, .h6{
 .p_h2{
     font-weight: 200;
     margin-bottom: 0.2rem;
-
     @include fluid-text(24,9);
     line-height: 1.2;
 }
@@ -91,7 +88,6 @@ h6, .h6{
 .p_h3{
     font-weight: 400;
     margin-bottom: 0.2rem;
-
     @include fluid-text(24,7);
     line-height: 1.2;
 }
@@ -100,7 +96,6 @@ h6, .h6{
     font-weight: 300;
 
     @include fluid-text(24, 11);
-    
     line-height: 1.2;
 }
 

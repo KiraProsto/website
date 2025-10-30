@@ -805,6 +805,7 @@ a[class] {
   box-sizing: border-box;
   overflow: hidden;
 }
+
 @media (max-width: 63.99875rem) {
   .main-layout__sidebar {
     height: 36.25rem;
@@ -976,5 +977,4 @@ a[class] {
 .services__text {
   text-align: justify;
 }
-
 /*# sourceMappingURL=main.css.map */

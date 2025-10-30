@@ -12,6 +12,12 @@
         position: sticky;
         top: rem(20);
         height: fluid(900,450);
+    display: flex;
+    
+    &__sidebar{
+        position: sticky;
+        width: 27.1%;
+        height: rem(900);
         margin: rem(22);
         padding-left: rem(28);
         padding-right: rem(30);
@@ -58,5 +64,6 @@
                 }
             }
         }
+    }
     }
 }
