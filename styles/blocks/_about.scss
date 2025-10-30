@@ -1,0 +1,60 @@
+@use '../helpers' as *;
+
+.about{
+    background: url('/images/About.png') 0 0 /cover no-repeat;
+
+    &__main{
+        margin-top: fluid(70,25);
+        margin-left: fluid(75, 30);
+
+        &__decoration{
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: rem(10);
+            transform: rotate(-90deg);
+            transform-origin: left top;
+            white-space: nowrap;
+
+            top: rem(320);  
+            left: rem(125);
+        }
+
+        &__icons{
+            display: flex;
+            align-items: center;
+            gap: rem(8);
+            flex-wrap: wrap;
+            margin-top: rem(25);
+            margin-left: rem(150);
+
+            &-icon{
+                width: rem(60);
+            }
+        }
+    }
+
+    &__line{
+        background-color: var(--color-white);
+        height: rem(0.1);
+        width: rem(135);
+        margin: 1rem 0;
+    }
+
+    &__row{
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+    width: fluid(620, 250);
+    margin-top: rem(15);
+    }
+
+    &__text-block{
+        margin-top: rem(80);
+        margin-left: rem(160);
+    }
+
+}
+

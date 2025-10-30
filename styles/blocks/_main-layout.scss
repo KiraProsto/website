@@ -1,7 +1,12 @@
 @use '../helpers' as *;
 
 .main-layout{
-    display: flex;
+    display: grid;
+    grid-template-columns: 27.1% auto;
+
+    @include mobile{
+        display: flex;
+    }
     
     &__sidebar{
         position: sticky;
@@ -14,6 +19,45 @@
         border-radius: rem(38);
         box-sizing: border-box;
         overflow: hidden;
+
+        @include tablet{
+            height: rem(580);
+        }
+
+        @include mobile{
+            display: none;
+        }
     }
 
+    &__content{
+
+        &__menu{
+            display: flex;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            justify-content: center;
+            background-color: var(--color-dark);
+            padding: rem(35);
+
+            &_list{
+                display: flex;
+                align-items: center;
+                column-gap: fluid(60, 15);
+                flex-wrap: nowrap;
+                min-width: 0;
+            }
+
+            &_link{
+                font-weight: 300;
+                white-space: nowrap;
+
+                &.is-active{
+                    font-weight: 400;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+    }
 }

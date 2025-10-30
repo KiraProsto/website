@@ -29,16 +29,7 @@ body,
   Убираем внешние отступы вертикали нужным тегам,
   у которых есть атрибут class
  */
-:where(h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-dl):where([class]) {
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
   margin-block: 0;
 }
 
@@ -157,8 +148,7 @@ button {
   (за исключением тех, у которых уже указан
   атрибут fill со значением 'none' или начинается с 'url')
  */
-:where([fill]:not([fill=none],
-[fill^=url])) {
+:where([fill]:not([fill='none'], [fill^='url'])) {
   fill: currentColor;
 }
 
@@ -167,8 +157,7 @@ button {
   (за исключением тех, у которых уже указан
   атрибут stroke со значением 'none')
  */
-:where([stroke]:not([stroke=none],
-[stroke^=url])) {
+:where([stroke]:not([stroke='none'], [stroke^='url'])) {
   stroke: currentColor;
 }
 
@@ -202,75 +191,76 @@ svg * {
   }
 }
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Bold.woff2") format("woff2");
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Medium.woff2") format("woff2");
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Light.woff2") format("woff2");
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-ExtraLight.woff2") format("woff2");
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-ExtraLight.woff2') format('woff2');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Black.woff2") format("woff2");
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Black.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "IBMPlexMono";
-  src: url("../fonts/IBMPlexMono-Light.woff2") format("woff2");
+  font-family: 'IBMPlexMono';
+  src: url('../fonts/IBMPlexMono-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "IBMPlexMono";
-  src: url("../fonts/IBMPlexMono-SemiBold.woff2") format("woff2");
+  font-family: 'IBMPlexMono';
+  src: url('../fonts/IBMPlexMono-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 :root {
-  --color-dark: #0D0D0D;
+  --color-dark: #0d0d0d;
   --color-grey: #181818;
-  --color-accent: #5E26C7;
-  --color-perple: #2E0053;
-  --color-white: #FFFFFF;
-  --color-gradient: linear-gradient(-75deg, #360A87, #2E0053);
-  --color-gradient-black: linear-gradient( to top,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0.3) 80%,
-      rgba(0, 0, 0, 0) 100%
+  --color-accent: #5e26c7;
+  --color-perple: #2e0053;
+  --color-white: #ffffff;
+  --color-gradient: linear-gradient(-75deg, #360a87, #2e0053);
+  --color-gradient-black: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.3) 80%,
+    rgba(0, 0, 0, 0) 100%
   );
-  --font-family-base: "Roboto", sans-serif;
-  --font-family-accent: "IBMPlexMono", sans-serif;
+  --font-family-base: 'Roboto', sans-serif;
+  --font-family-accent: 'IBMPlexMono', sans-serif;
   --border: 0.0625rem solid var(--color-white);
   /*если что здесь меняем*/
   --container-width: 57.8125rem;
@@ -339,26 +329,30 @@ main {
   color: var(--color-accent);
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-weight: 900;
-  font-size: clamp(3.75rem, 3.0288461538rem + 3.2051282051vw, 6.875rem);
+  font-size: clamp(2.5rem, 1.4903846154rem + 4.4871794872vw, 6.875rem);
   line-height: 1.2;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-weight: 600;
   font-family: var(--font-family-accent);
   font-size: clamp(1.25rem, 0.8461538462rem + 1.7948717949vw, 3rem);
   line-height: 1.2;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-weight: 500;
   font-size: clamp(1.25rem, 0.9615384615rem + 1.2820512821vw, 2.5rem);
   line-height: 1.2;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-weight: 300;
   font-size: clamp(0.6875rem, 0.4134615385rem + 1.2179487179vw, 1.875rem);
   line-height: 1.2;
@@ -366,21 +360,28 @@ h6, .h6 {
 
 .p_h1 {
   font-weight: 900;
-  font-size: clamp(1rem, 0.7692307692rem + 1.0256410256vw, 2rem);
+  font-size: clamp(0.5625rem, 0.2307692308rem + 1.4743589744vw, 2rem);
+
   line-height: 1.2;
 }
 
 .p_h2 {
   font-weight: 200;
   margin-bottom: 0.2rem;
-  font-size: clamp(1rem, 0.8846153846rem + 0.5128205128vw, 1.5rem);
+  font-size: clamp(0.5625rem, 0.3461538462rem + 0.9615384615vw, 1.5rem);
   line-height: 1.2;
 }
 
 .p_h3 {
   font-weight: 400;
   margin-bottom: 0.2rem;
-  font-size: clamp(1rem, 0.8846153846rem + 0.5128205128vw, 1.5rem);
+  font-size: clamp(0.4375rem, 0.1923076923rem + 1.0897435897vw, 1.5rem);
+  line-height: 1.2;
+}
+
+.p_h6 {
+  font-weight: 300;
+  font-size: clamp(0.6875rem, 0.5rem + 0.8333333333vw, 1.5rem);
   line-height: 1.2;
 }
 
@@ -416,11 +417,11 @@ a[class] {
 }
 
 .kursor::after {
-  content: "";
+  content: '';
   display: inline-block;
   width: clamp(0.375rem, 0.2884615385rem + 0.3846153846vw, 0.75rem);
   height: clamp(1.0625rem, 0.8173076923rem + 1.0897435897vw, 2.125rem);
-  background-image: url("../icons/kursor.svg");
+  background-image: url('../icons/kursor.svg');
   margin-left: 0.1875rem;
 }
 
@@ -572,7 +573,7 @@ a[class] {
 }
 @media (max-width: 47.99875rem) {
   .hero::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -584,14 +585,14 @@ a[class] {
   }
 }
 .hero__main {
-  background: url(../../images/Home.png) 0 0/cover no-repeat;
+  background: url(../../images/Home.png) 0 0 / cover no-repeat;
   display: grid;
   grid-template-columns: 48% auto;
   padding-left: 10%;
 }
 @media (max-width: 47.99875rem) {
   .hero__main {
-    background: url(../../images/Home_mobile.png) 0 0/cover no-repeat;
+    background: url(../../images/Home_mobile.png) 0 0 / cover no-repeat;
     display: flex;
     flex-direction: column;
     padding-left: 0;
@@ -695,7 +696,7 @@ a[class] {
     display: block;
   }
   .hero__photo::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -773,12 +774,19 @@ a[class] {
 }
 
 .main-layout {
-  display: flex;
+
+  display: grid;
+  grid-template-columns: 27.1% auto;
+}
+@media (max-width: 47.99875rem) {
+  .main-layout {
+    display: flex;
+  }
 }
 .main-layout__sidebar {
   position: sticky;
-  width: 27.1%;
-  height: 56.25rem;
+  top: 1.25rem;
+  height: clamp(28.125rem, 21.6346153846rem + 28.8461538462vw, 56.25rem);
   margin: 1.375rem;
   padding-left: 1.75rem;
   padding-right: 1.875rem;
@@ -786,6 +794,41 @@ a[class] {
   border-radius: 2.375rem;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+@media (max-width: 63.99875rem) {
+  .main-layout__sidebar {
+    height: 36.25rem;
+  }
+}
+@media (max-width: 47.99875rem) {
+  .main-layout__sidebar {
+    display: none;
+  }
+}
+.main-layout__content__menu {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  justify-content: center;
+  background-color: var(--color-dark);
+  padding: 2.1875rem;
+}
+.main-layout__content__menu_list {
+  display: flex;
+  align-items: center;
+  column-gap: clamp(0.9375rem, 0.2884615385rem + 2.8846153846vw, 3.75rem);
+  flex-wrap: nowrap;
+  min-width: 0;
+}
+.main-layout__content__menu_link {
+  font-weight: 300;
+  white-space: nowrap;
+}
+.main-layout__content__menu_link.is-active {
+  font-weight: 400;
+  pointer-events: none;
 }
 
 .personal-card {
@@ -796,14 +839,14 @@ a[class] {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.9375rem;
+  gap: clamp(0.625rem, 0.5528846154rem + 0.3205128205vw, 0.9375rem);
   margin-top: 2.6875rem;
 }
 .personal-card__header__avatar {
-  width: 4.375rem;
+  width: clamp(1.875rem, 1.1538461538rem + 3.2051282051vw, 5rem);
 }
 .personal-card__photo {
-  width: 18.4375rem;
+  width: clamp(12.5rem, 11.1298076923rem + 6.0897435897vw, 18.4375rem);
   margin-top: 1.5625rem;
 }
 .personal-card__profession {
@@ -840,4 +883,51 @@ a[class] {
   margin: 1rem 0;
 }
 
+.about {
+  background: url('/images/About.png') 0 0 / cover no-repeat;
+}
+.about__main {
+  margin-top: clamp(1.5625rem, 0.9134615385rem + 2.8846153846vw, 4.375rem);
+  margin-left: clamp(1.875rem, 1.2259615385rem + 2.8846153846vw, 4.6875rem);
+}
+.about__main__decoration {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  white-space: nowrap;
+  top: 20rem;
+  left: 7.8125rem;
+}
+.about__main__icons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.5625rem;
+  margin-left: 9.375rem;
+}
+.about__main__icons-icon {
+  width: 3.75rem;
+}
+.about__line {
+  background-color: var(--color-white);
+  height: 0.00625rem;
+  width: 8.4375rem;
+  margin: 1rem 0;
+}
+.about__row {
+  display: flex;
+  align-items: center;
+}
+.about__text {
+  width: clamp(15.625rem, 10.2884615385rem + 23.7179487179vw, 38.75rem);
+  margin-top: 0.9375rem;
+}
+.about__text-block {
+  margin-top: 5rem;
+  margin-left: 10rem;
+}
 /*# sourceMappingURL=main.css.map */
