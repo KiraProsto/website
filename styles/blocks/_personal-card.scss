@@ -1,0 +1,60 @@
+@use '../helpers' as *;
+
+.personal-card{
+    max-height: 100vh;
+    overflow-y: auto;
+
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: rem(15);
+        margin-top: rem(43);
+
+        &__avatar{
+            width: rem(70);
+        }
+    }
+
+    &__photo{
+        width: rem(295);
+        margin-top: rem(25);
+    }
+
+    &__profession{
+        display: block;
+        padding-top: rem(25);
+        width: rem(200);
+    }
+
+    &__specialization{
+        display: block;
+        padding-top: rem(15);
+        width: rem(200);
+    }
+
+    &__location{
+        display: block;
+        padding-top: rem(15);
+        width: rem(200);
+    }
+
+    &__contacts{
+        display: flex;
+        gap: fluid(24, 8);
+        justify-content: center;
+    }
+}
+
+.name__second-line {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.custom-line{
+    width: 100%;
+    justify-content: center;
+    background-color: var(--color-white);
+    height: rem(2);
+    margin: 1rem 0;
+}
