@@ -414,7 +414,7 @@ a[class] {
   column-gap: 1rem;
 }
 .header__overlay {
-  z-index: 10000;
+  z-index: 9;
   background-color: var(--color-dark);
 }
 @media (min-width: 47.99875rem) {
@@ -477,7 +477,7 @@ a[class] {
   aspect-ratio: 2.75rem;
   display: inline-flex;
   margin-left: auto;
-  z-index: 10001;
+  z-index: 10;
   flex-direction: column;
   justify-content: space-between;
   padding: 0.53125rem 0.265625rem;
