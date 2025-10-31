@@ -370,27 +370,27 @@ h6, .h6 {
   line-height: 1.2;
 }
 
-.p_h1 {
+.text-title-lg {
   font-weight: 900;
   font-size: clamp(0.5625rem, 0.2307692308rem + 1.4743589744vw, 2rem);
   line-height: 1.2;
 }
 
-.p_h2 {
+.text-title-md {
   font-weight: 200;
   margin-bottom: 0.2rem;
   font-size: clamp(0.5625rem, 0.3461538462rem + 0.9615384615vw, 1.5rem);
   line-height: 1.2;
 }
 
-.p_h3 {
+.text-body-md {
   font-weight: 400;
   margin-bottom: 0.2rem;
   font-size: clamp(0.4375rem, 0.1923076923rem + 1.0897435897vw, 1.5rem);
   line-height: 1.2;
 }
 
-.p_h6 {
+.text-caption {
   font-weight: 300;
   font-size: clamp(0.6875rem, 0.5rem + 0.8333333333vw, 1.5rem);
   line-height: 1.2;
