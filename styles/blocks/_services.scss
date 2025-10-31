@@ -1,0 +1,44 @@
+@use '../helpers' as *;
+
+.services{
+    margin-top: rem(50);
+    margin-right: rem(50);
+    background: url(/images/Services.png) 0 0 /cover no-repeat;
+
+    &__title{
+        max-width: rem(800); 
+        text-align: right; 
+        margin-left: auto;
+    }
+
+    &__p{
+        width: fluid(650, 300);
+        text-align: right;
+        margin-left: auto;
+    }
+
+    &__grid{
+        margin-top: rem(50);
+        margin-left: rem(10);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+        gap: rem(25);
+
+        &-a{
+            margin-top: rem(20);
+            margin-left: rem(30);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+            gap: rem(50);
+        }
+    }
+
+    &__subtitle {
+        text-align: center; 
+        margin-bottom: rem(5);
+    }
+
+    &__text{
+        text-align: justify;
+    }
+}
