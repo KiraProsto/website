@@ -65,7 +65,7 @@ h6, .h6{
     line-height: 1.2;
 }
 
-.p_h1{
+.text-title-lg{
     font-weight: 900;
 
 
@@ -73,7 +73,7 @@ h6, .h6{
     line-height: 1.2;
 }
 
-.p_h2{
+.text-title-md{
     font-weight: 200;
     margin-bottom: 0.2rem;
     @include fluid-text(24,9);
@@ -81,7 +81,7 @@ h6, .h6{
     line-height: 1.2;
 }
 
-.p_h3{
+.text-body-md{
     font-weight: 400;
     margin-bottom: 0.2rem;
 
@@ -90,7 +90,7 @@ h6, .h6{
     line-height: 1.2;
 }
 
-.p_h6{
+.text-caption{
     font-weight: 300;
 
     @include fluid-text(24, 11);
