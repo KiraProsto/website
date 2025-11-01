@@ -7,6 +7,7 @@
   line-height: 1.6;
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: rem(20);
 
   @include mobile{
     font-size: rem(12);

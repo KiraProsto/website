@@ -1,0 +1,34 @@
+@use '../helpers' as *;
+
+.contakts{
+    background: url(/images/Contakts.png) 0 0 /cover no-repeat;
+
+    &__p{
+        padding-top: rem(80);
+        width: fluid(650, 300);
+        text-align: left;
+        margin-right: auto;
+        margin-left: rem(90);
+    }
+
+    &__blocks{
+        display: flex;
+        margin-top: rem(100);
+        margin-left: rem(90);
+        gap: rem(76);
+    }
+
+    &__block{
+        text-align: center;
+    }
+
+    &__qr{
+        margin-bottom: rem(10);
+        border-radius: rem(18);
+    }
+
+    &__title{
+        margin-left: rem(90);
+        margin-top: rem(55);
+    }
+}

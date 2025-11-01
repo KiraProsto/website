@@ -777,6 +777,7 @@ a[class] {
   line-height: 1.6;
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.25rem;
 }
 @media (max-width: 47.99875rem) {
   .footer {
@@ -975,6 +976,34 @@ a[class] {
 }
 .services__text {
   text-align: justify;
+}
+
+.contakts {
+  background: url(/images/Contakts.png) 0 0/cover no-repeat;
+}
+.contakts__p {
+  padding-top: 5rem;
+  width: clamp(18.75rem, 13.7019230769rem + 22.4358974359vw, 40.625rem);
+  text-align: left;
+  margin-right: auto;
+  margin-left: 5.625rem;
+}
+.contakts__blocks {
+  display: flex;
+  margin-top: 6.25rem;
+  margin-left: 5.625rem;
+  gap: 4.75rem;
+}
+.contakts__block {
+  text-align: center;
+}
+.contakts__qr {
+  margin-bottom: 0.625rem;
+  border-radius: 1.125rem;
+}
+.contakts__title {
+  margin-left: 5.625rem;
+  margin-top: 3.4375rem;
 }
 
 /*# sourceMappingURL=main.css.map */
