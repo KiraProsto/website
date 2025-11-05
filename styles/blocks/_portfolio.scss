@@ -1,0 +1,60 @@
+@use '../helpers' as *;
+
+.portfolio{
+    background: url('/images/Portfolio.png') 0 0 /cover no-repeat;
+
+    &__title{
+        padding-top: rem(50);
+        margin-left: rem(60);
+    }
+
+    &__decoration{
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: rem(10);
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        white-space: nowrap;
+
+        top: rem(225);  
+        left: rem(165);
+    }
+
+    &__line{
+        background-color: var(--color-white);
+        height: rem(0.1);
+        width: rem(50);
+        margin: 1rem 0;
+    }
+
+    &__text{
+        display: block;
+        width: rem(480);
+        margin-left: rem(200);
+        margin-top: rem(55);
+    }
+
+    &__folders{
+        display: flex;
+        margin-left: rem(50);
+        margin-top: rem(80);
+        gap: rem(90);
+    }
+
+    &__folder{
+        transition: var(--transition-duration);
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(rem(-4));
+        }
+    }
+
+    &__quote{
+        margin-left: rem(130);
+        margin-top: rem(80);
+        margin-bottom: rem(50);
+        width: rem(715);
+    }
+}

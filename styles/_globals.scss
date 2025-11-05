@@ -104,6 +104,15 @@ h6, .h6{
     line-height: 1.2;
 }
 
+.text-quote{
+    font-weight: 300;
+    font-family: var(--font-family-accent);
+
+    @include fluid-text(28, 20);
+
+    line-height: 1.2;
+}
+
 a, 
 button,
 label,

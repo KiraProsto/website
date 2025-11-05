@@ -1,0 +1,109 @@
+@use '../helpers' as *;
+
+.skills{
+    background: url(/images/Skills.png) 0 0 /cover no-repeat;
+
+    &__text{
+        margin-top: rem(20);
+    }
+
+    &__title{
+        line-height: 0.9;
+    }
+
+    &__span{
+        letter-spacing: rem(5);
+    }
+
+    &__timeline{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        margin: rem(31) rem(90);
+        padding-top: rem(20);
+
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: rem(7);
+            width: rem(890);
+            background-color: var(--color-white);
+        }
+
+        &__item {
+        position: relative;
+        text-align: center;
+        width: rem(250);
+        padding-top: rem(15);
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: rem(-35);
+                left: 50%;
+                width: rem(35);
+                height: rem(35);
+                background-color: var(--color-accent);
+            }
+        }
+    }
+
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: rem(115);
+        margin-top: rem(25);
+    }
+
+    &__card{
+        display: flex;
+        width: rem(220);
+        gap: rem(25);
+    }
+
+    &__descriptions{
+        display: grid;
+        grid-template-columns: 40% 45%;
+        margin-top: rem(25);
+        gap: 5%;
+    }
+
+    &__description{
+        text-align: justify;
+    }
+
+    &__end{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+
+    &__item {
+        display: grid;
+        grid-template-columns: rem(200) 1fr;
+        align-items: center;
+        column-gap: rem(12);
+        margin: rem(24) 0;
+    }
+
+    &__bar {
+        width: 50%;
+        height: rem(13);
+        background-color: var(--color-light-grey);
+    }
+
+    &__fill {
+        height: 100%;
+        background-color: var(--color-accent);
+    }
+
+    &__fill--100 { width: 100%; }
+    &__fill--85 { width: 85%; }
+    &__fill--70 { width: 70%; }
+}
